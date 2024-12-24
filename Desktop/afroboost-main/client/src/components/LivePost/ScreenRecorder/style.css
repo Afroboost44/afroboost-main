@@ -1,0 +1,36 @@
+.row_btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.rec_btn {
+	background: rgb(101, 0, 114);
+	color: white;
+	border: 1px solid rgb(75, 1, 85);
+	padding: 1rem;
+	border-radius: 2rem;
+}
+.rec_btn:hover {
+	cursor: pointer;
+	background: rgba(101, 0, 114, 0.705);
+}
+.rec_status {
+	color: rgb(225, 0, 255);
+	font-size: 1rem;
+	margin-right: 2rem;
+	animation: blink 1s infinite; /* Applying the blink animation */
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1; /* Start with fully visible */
+	}
+	50% {
+		opacity: 0; /* Fade to invisible at 50% */
+	}
+	100% {
+		opacity: 1; /* Return to fully visible at 100% */
+	}
+}

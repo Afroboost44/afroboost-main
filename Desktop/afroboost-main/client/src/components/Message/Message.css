@@ -1,0 +1,30 @@
+.message {
+	color: white;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 18px;
+	margin-top: 10px;
+	max-width: 300px;
+	background: linear-gradient(90deg, rgba(74, 7, 164, 1) 0%, rgba(101, 0, 114, 1) 100%);
+}
+
+.message-other {
+	color: white;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 18px;
+	margin-top: 10px;
+	max-width: 300px;
+	background: linear-gradient(90deg, rgb(44, 44, 44) 0%, rgb(32, 32, 32) 100%);
+}
+.delete_message_btn {
+	color: red;
+	font-size: 1rem;
+	background-color: white;
+	padding: 0.2rem;
+	border-radius: 100%;
+}

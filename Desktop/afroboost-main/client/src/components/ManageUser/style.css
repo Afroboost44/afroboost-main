@@ -1,0 +1,106 @@
+/* ManageUsers.css */
+.v2_container {
+	padding: 20px;
+}
+
+/* Add a new class for the table wrapper */
+.v2_table_wrapper {
+	overflow-x: auto; /* Enable horizontal scrolling */
+	-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.v2_table {
+	width: 100%;
+	margin: 20px 0;
+	font-size: 18px;
+	text-align: left;
+	border: 1px solid white;
+	border-radius: 0.3rem;
+}
+
+.v2_th,
+.v2_td {
+	padding: 12px;
+}
+
+.v2_th {
+	background-color: #141414;
+	color: white;
+}
+
+.v2_tr:nth-child(even) {
+	background-color: #2b2b2b;
+	color: white;
+}
+
+.v2_tr:nth-child(odd) {
+	background-color: #383838;
+	color: white;
+}
+
+.v2_tr:hover {
+	background-color: #38383892;
+}
+
+.v2_btn_row {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.v2_btn {
+	background: white;
+	border-radius: 0.3rem;
+	padding: 0.3rem 0.5rem;
+	cursor: pointer;
+	border: none;
+	width: 5rem;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+	.v2_table {
+		font-size: 16px; /* Adjust font size for smaller screens */
+	}
+
+	.v2_th,
+	.v2_td {
+		padding: 10px; /* Adjust padding for smaller screens */
+	}
+
+	.v2_btn {
+		padding: 0.2rem 0.4rem; /* Adjust button padding for smaller screens */
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.v2_table {
+		font-size: 14px; /* Further adjust font size for very small screens */
+	}
+
+	.v2_th,
+	.v2_td {
+		padding: 8px; /* Further adjust padding for very small screens */
+	}
+
+	.v2_btn {
+		padding: 0.1rem 0.3rem; /* Further adjust button padding for very small screens */
+	}
+}
+
+.v2__whatsaapbtn {
+	display: flex;
+	gap: 5px;
+}
+.v2__whatsaapbtn button {
+	border: none;
+	background: green;
+	padding-top: 3px;
+	color: white;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.v2_userdeletebtn {
+	background-color: red;
+	color: white;
+	width: 2rem;
+}

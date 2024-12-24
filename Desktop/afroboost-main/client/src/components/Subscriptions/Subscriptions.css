@@ -1,0 +1,101 @@
+.subscriptions {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.no_items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 60vh;
+}
+
+.no_items p {
+	color: white;
+	font-size: 16px;
+	font-family: 'Montserrat';
+}
+
+.subscriptions__head {
+	display: flex !important;
+	align-items: center;
+}
+
+.subscriptions__head svg {
+	cursor: pointer;
+}
+
+.subscriptions__head .post_title {
+	color: white;
+	margin-left: 10px;
+}
+
+.back {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.back span {
+	color: white;
+	margin-left: 10px;
+	font-weight: 600;
+	font-family: 'Montserrat';
+}
+
+.user-products .MuiDialog-paperWidthSm {
+	max-width: 800px !important;
+}
+
+.circle {
+	display: block;
+	margin-right: 5px;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.qr_status {
+	position: relative;
+}
+.green__cirle {
+	position: absolute;
+	background-color: #00bf33;
+	height: 1.5rem;
+	top: 25%;
+	left: 40%;
+	width: 1.5rem;
+	border-radius: 50%;
+	border: 0.3rem solid white;
+}
+.empty__cirle {
+	background-color: transparent;
+}
+.popup_sessiondetails {
+	background: red;
+}
+.validatebtn_user {
+	font-size: 1.5rem;
+	padding: 0.3rem 0.8rem 0.1rem 0.8rem !important;
+	margin: 0 !important;
+}
+.validatemodal__icon {
+	color: white;
+	font-size: 2rem;
+}
+.checkvalidate {
+	color: white;
+	font-size: 2rem;
+}
+.checkvalidate:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.animatedCheck {
+	display: flex;
+	justify-content: flex-end; /* Align items horizontally to the start */
+}

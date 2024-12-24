@@ -1,0 +1,177 @@
+.scan {
+	color: white;
+}
+.scan__content {
+	display: flex;
+	gap: 8rem;
+}
+.participants__heading {
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 2rem;
+}
+.sessions__participant {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.green__tick {
+	font-size: 1.5rem;
+	background: rgb(0, 112, 17);
+	color: rgb(255, 255, 255);
+	margin: 1rem;
+	border-radius: 50%;
+	padding: 0.2rem 0.5rem;
+}
+.qrcode__canva {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.validatebtn {
+	background: linear-gradient(#4e059c, #60017b);
+	color: white;
+	padding: 1rem;
+	border-radius: 2rem;
+	border: none;
+}
+.validatebtn:hover {
+	cursor: pointer;
+	background: linear-gradient(rgba(78, 5, 156, 0.8), rgba(96, 1, 123, 0.5));
+}
+
+.session_row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+/* //clock */
+.timePicker__my {
+	/* border: 2px solid #ccc; */
+	border: none;
+	border-radius: 5px;
+	font-family: Arial, sans-serif;
+	color: #333;
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	background-color: #f9f9f9;
+}
+.headofcirle {
+	display: flex;
+	padding-left: 2rem;
+	align-items: flex-end;
+}
+
+.green__cirle1 {
+	align-self: flex-end;
+	background-color: #00bf33;
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 50%;
+	border: 0.1rem solid rgb(134, 134, 134);
+	margin-left: auto;
+}
+
+.empty__cirle {
+	background-color: transparent;
+}
+.QrSection {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.5rem;
+}
+.button__row_qr {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.model__row {
+	display: flex;
+	flex-direction: column;
+
+	/* background-color: red; */
+}
+.btn__cross_div {
+	/* background-color: rebeccapurple; */
+	align-self: flex-end;
+}
+.cross_btn {
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	color: black;
+}
+.cross_btn:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.qr__icon {
+	font-size: 1.5rem;
+
+	/* color: black; */
+}
+.studentbtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.tableRow {
+	height: 4.8rem;
+	/* background-color: rebeccapurple; */
+}
+.stickyTableHead {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: #f8f8f8; /* Set the background color for the sticky header */
+}
+.student_profile {
+}
+.student_profile:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.resetbtn {
+	display: flex;
+	align-self: flex-end;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#4e059c, #60017b);
+	color: white;
+	padding: 1rem;
+	border-radius: 2rem;
+	border: none;
+	width: 3rem;
+	height: 3rem;
+}
+.resetbtn:hover {
+	width: auto;
+	height: 3rem;
+	cursor: pointer;
+	background: linear-gradient(rgba(78, 5, 156, 0.8), rgba(96, 1, 123, 0.5));
+}
+.resetbtn .resetbtntext {
+	display: none;
+	opacity: 0; /* Start with opacity at 0 (completely transparent) */
+	transition: opacity 3s ease;
+}
+.resetbtn:hover .resetbtntext {
+	display: inline;
+	opacity: 1;
+}
+.v2class_student .MuiTableContainer-root {
+	max-width: 100% !important; /* Adjust this width as necessary */
+}
+@media only screen and (max-width: 600px) {
+	.v2class_student {
+		overflow-x: auto;
+	}
+
+	.v2class_student .MuiTableContainer-root {
+		max-width: 350px !important; /* Adjust this width as necessary */
+	}
+}

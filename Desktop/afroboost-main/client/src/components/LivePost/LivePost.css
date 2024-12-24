@@ -1,0 +1,214 @@
+.live-post {
+	flex-direction: row;
+	width: 100%;
+}
+
+.afroboost-container {
+	display: flex;
+	width: calc(100% - 20px);
+	margin: 0 20px;
+	flex-direction: column;
+}
+
+.afroboost-player {
+	display: inline;
+	align-self: center;
+	width: 100%;
+	height: 350px;
+}
+
+@media screen and (max-width: 800px) {
+	.live-post {
+		flex-direction: column;
+		width: 100%;
+	}
+	.afroboost-player {
+		width: 100%;
+	}
+}
+
+.livepost__icon {
+	font-size: 1.5rem;
+	color: white;
+}
+.meetingend__icon {
+	color: red;
+}
+.watching__icon {
+	color: grey;
+}
+.fillheart__icon {
+	/* background-color: red; */
+}
+.liveaction__row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 1rem;
+}
+
+/* ///////////////// */
+.livestreamthumnail {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 1rem;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.livestream__thumnail-image {
+	display: block;
+	width: 100%;
+	max-height: 80vh; /* Adjust the max height as needed */
+	object-fit: cover; /* Maintain aspect ratio while fitting the image */
+	border-radius: 1rem;
+}
+
+.livestreamdetails {
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0;
+	padding: 10px;
+
+	color: white;
+	border-radius: 1rem;
+	background-color: rgba(126, 68, 177, 0.6);
+	opacity: 1; /* Set opacity to 1 to keep the text always visible */
+}
+.cross_livestreamthumnail {
+	position: absolute;
+	top: 8%;
+	left: 7%;
+	background: none;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 0.5rem 0.7rem;
+	color: white;
+}
+.cross_livestreamthumnail:hover {
+	cursor: pointer;
+	background: white;
+	color: grey;
+}
+
+.livestream-name {
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin: 0 0 5px 0;
+	text-align: center;
+}
+
+.livestream-description {
+	text-align: center !important;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	font-weight: 700;
+	line-height: 1.4rem;
+	margin: 6rem;
+	font-size: 1rem;
+}
+
+.livestream-price {
+	align-self: flex-end;
+	margin-right: 1rem;
+	font-weight: 600;
+	font-size: 1rem;
+}
+.livepost-sidebar {
+	max-height: 40vh; /* Set a maximum height for scrolling */
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-bottom: 1rem;
+}
+
+.livepost-sidebar::-webkit-scrollbar {
+	width: 10px;
+}
+
+.livepost-sidebar::-webkit-scrollbar-thumb {
+	background-color: #5d2164; /* Color of the thumb */
+	border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.livepost-sidebar::-webkit-scrollbar-track {
+	background-color: #7b5a8046; /* Color of the track */
+	border-radius: 5px; /* Rounded corners for the track */
+}
+@media screen and (min-width: 1355px) {
+	.livepost-sidebar {
+		width: 18%;
+		max-height: 70vh;
+		overflow-y: auto;
+	}
+}
+@media screen and (min-width: 1700px) {
+	.livepost-sidebar {
+		width: 15%;
+		max-height: 70vh;
+		overflow-y: auto;
+	}
+}
+@media screen and (max-width: 1262px) {
+	.livestream-name {
+		font-size: 1.2rem;
+		font-weight: 800;
+		margin: 0 0 5px 0;
+	}
+
+	.livestream-description {
+		text-align: center; /* Center the description text */
+
+		font-size: 0.9rem;
+	}
+
+	.livestream-price {
+		margin: 0;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width: 796px) {
+	.meetingend__icon,
+	.pausebtn__my {
+		margin-left: 2rem;
+		font-size: 2rem;
+		margin-right: 2rem;
+	}
+	.livestream-name {
+		font-size: 1rem;
+		font-weight: 800;
+		margin: 0 0 5px 0;
+	}
+
+	.livestream-description {
+		text-align: center; /* Center the description text */
+		margin: 4.5rem;
+		font-size: 0.7rem;
+	}
+
+	.livestream-price {
+		margin: 0;
+		font-weight: 600;
+		font-size: 0.7rem;
+	}
+	.cross_livestreamthumnail {
+		position: absolute;
+		top: 3%;
+		left: 8%;
+		background: none;
+		border: 1px solid white;
+		border-radius: 50%;
+		padding: 0.3rem 0.5rem;
+		color: white;
+	}
+}
+.screen__recorder {
+}

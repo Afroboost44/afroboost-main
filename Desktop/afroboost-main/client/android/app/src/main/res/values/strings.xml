@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">afroboost</string>
+    <string name="title_activity_main">afroboost</string>
+    <string name="package_name">cm.afroboost.afroboost</string>
+    <string name="custom_url_scheme">cm.afroboost.afroboost</string>
+</resources>

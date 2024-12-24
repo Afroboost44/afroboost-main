@@ -1,0 +1,15 @@
+.comment {
+    padding-top: 6px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #0c0c0c;
+    box-shadow: 5px 5px 17px 0px black;
+    margin-top: 28px;
+    border-radius: 14px;
+    max-width: 500px;
+}
+.A__BTN{
+    background: none;
+    border:none;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "afroboost",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

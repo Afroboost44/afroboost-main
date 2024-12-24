@@ -1,0 +1,46 @@
+.search__icon {
+	margin-left: 1rem;
+}
+
+.library__button {
+	background: none;
+	border: none;
+}
+
+.library__icon {
+	font-size: 1.8rem;
+	color: white;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.library__icon:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.vouchers {
+	color: white;
+}
+.voucher__row {
+	display: flex;
+	gap: 3rem;
+}
+.voucher__row img {
+	width: 60rem;
+	/* height: auto; */
+}
+.voucher__actionsbtn {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	font-size: 1.5rem;
+}
+.delete__btn {
+	background: linear-gradient(#4a048e, #580173);
+	padding: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.delete__btn:hover {
+	opacity: 0.8;
+}

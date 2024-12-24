@@ -1,0 +1,466 @@
+.withdraw-button {
+	text-decoration: underline;
+	text-decoration-color: white;
+	transform: scale(1);
+	transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.withdraw-button:hover {
+	transform: scale(1.15);
+	transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.transfer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+}
+.transfer-title {
+	font-size: 22px;
+	margin-left: -12px;
+}
+.transfer-nav {
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+}
+.transfer-balance {
+	padding: 20px;
+	padding-bottom: 40px;
+	border-bottom: 5px solid #8e2b9c;
+}
+.transfer-content {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	justify-content: space-between;
+	width: 95%;
+}
+.transfer-button {
+	font-size: 16px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	display: flex;
+	color: white;
+	flex-direction: row;
+}
+.transfer-button-selected {
+	width: 260px;
+	font-size: 2px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	display: flex;
+	color: white;
+	flex-direction: row;
+	background-color: #4e069c3d;
+}
+.transfer-button:hover {
+	cursor: pointer;
+	background-color: #0f0f0f;
+}
+.history-container {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	margin-right: -23px;
+	justify-content: space-between;
+}
+.left-transfer-content {
+	justify-content: center;
+	width: 500px;
+}
+.history-div {
+	color: white;
+	border-bottom: 2px solid #8e2b9c;
+	padding: 20px;
+	padding-right: 0px;
+	margin: 20px;
+	margin-top: 0;
+	width: 90%;
+	min-width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	justify-content: space-between;
+}
+.history-post-title {
+	font-size: 26px;
+	font-family: Montserrat;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 100%;
+}
+.history-post-desc {
+	font-size: 16px;
+	font-family: Montserrat;
+}
+.history-post-price {
+	font-weight: 500;
+	font-size: 24px;
+	font-family: Montserrat;
+	align-self: center;
+	min-width: 170px;
+	margin: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+	.transfer-nav {
+		align-self: center;
+		flex-direction: column;
+	}
+	.transfer-button,
+	.transfer-button-selected {
+		margin-right: 0;
+		align-self: center;
+	}
+	.transfer {
+		align-items: center;
+		flex-direction: column;
+	}
+	.transfer-content {
+		align-self: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 10px;
+		margin-right: -23px;
+		margin-left: 0px;
+		margin-bottom: 70px;
+	}
+	.history-container {
+		flex-direction: column;
+	}
+	.left-transfer-content {
+		align-self: center;
+		justify-content: center;
+		width: 500px;
+	}
+	.history-div {
+		width: 80%;
+		min-width: 300px;
+		flex-direction: column;
+		align-self: center;
+		margin-top: 40px;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding: 0px;
+		padding-bottom: 10px;
+		margin-bottom: 70px;
+		zoom: 0.7;
+	}
+	.history-post-title {
+		font-size: 24px;
+	}
+	.history-post-desc {
+		font-size: 16px;
+	}
+	.history-post-price {
+		margin: 0;
+		align-self: flex-end;
+	}
+}
+
+.transfer__button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.mail__icon {
+	font-size: 1.5rem;
+	background: linear-gradient(#4c06a0, #620178);
+	border-radius: 50%;
+	padding: 0.5rem 0.8rem;
+}
+.transfer__icon {
+	font-size: 1.5rem;
+	background: linear-gradient(#4c06a0, #620178);
+	border-radius: 50%;
+	padding: 0.5rem 0.8rem;
+}
+.requestwithdrawalbtn {
+	text-decoration: underline;
+	text-decoration-color: white;
+	/* background:red; */
+	display: flex;
+	width: 10rem;
+}
+.requestwithdrawalbtn:hover {
+	opacity: 0.8;
+}
+
+.vouchers_valueRow {
+	display: flex;
+	gap: 1rem;
+}
+.search_voucher {
+	/* background: red; */
+	width: 50%;
+}
+
+.image__row {
+	display: flex;
+	margin-top: 2rem;
+}
+.image__column {
+	border: 0.5rem solid white;
+	border-radius: 1rem;
+	width: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image__column img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+
+.voucher__code {
+	font-size: 1rem;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: white;
+	border-radius: 2rem;
+	padding: 1rem 1.5rem;
+	color: #9649b1;
+}
+
+.voucher__expiryDate {
+	font-size: 0.7rem;
+	font-weight: 800;
+	position: absolute;
+	bottom: 10%;
+	transform: translateY(50%);
+	color: rgba(255, 255, 255, 0.569);
+}
+
+.voucher__chf {
+	display: flex;
+	gap: 0.5rem;
+	font-size: 1rem;
+	font-weight: 800;
+	font-weight: bold;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	/* transform: translateX(70%); */
+	color: #9649b1;
+	z-index: 2; /* Adjust the z-index to bring the text field above the black layer */
+}
+
+.voucher__chf--text {
+	background: white;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	width: auto;
+}
+.voucher__chf--value {
+	background: white;
+	border-radius: 0.5rem;
+	padding: 0.5rem 0.5rem;
+	width: 6rem;
+}
+#chf__input {
+	border: none;
+	background: none;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	width: 6rem;
+}
+
+.vouchergeneratebtn {
+	background: linear-gradient(#500598, #60027c);
+	background: #4c06a0;
+	color: rgb(255, 255, 255);
+	border: none;
+	padding: 1rem 1rem;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+.vouchergeneratebtn:hover {
+	opacity: 0.8;
+}
+
+.searcheffect__none:hover {
+	transform: none;
+}
+.datePicker {
+	background-color: #111111;
+	border: none;
+	color: white;
+	margin-left: 0.5rem;
+}
+.recever__email {
+	width: 100%;
+	background-color: #111111;
+	border: none;
+	color: white;
+	margin-left: 0.5rem;
+}
+.upload__icons {
+	color: white;
+	font-size: 2rem;
+	position: absolute;
+	cursor: pointer;
+}
+.image-uploader {
+	/* Add any desired styles for the entire component container */
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+}
+
+.hovered::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity or color as needed */
+	opacity: 0;
+	transition: opacity 0.3s ease; /* Add the transition effect */
+	z-index: 1;
+}
+
+.hovered:hover::after {
+	opacity: 1; /* Make the black layer fully visible on hover */
+}
+
+.image {
+	/* Add any desired styles for the image itself */
+}
+
+.upload-label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff; /* Change the color of the upload icon */
+	font-size: 24px; /* Adjust the font size as needed */
+	z-index: 2;
+}
+.button__row {
+	display: flex;
+	justify-content: space-between;
+}
+.download__voucher {
+	background: linear-gradient(#500598, #60027c);
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	height: 3rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	cursor: pointer;
+}
+.download__voucher:hover {
+	opacity: 0.8;
+}
+.download_pdfbtn {
+	background: linear-gradient(#500598, #60027c);
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	height: 3rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	cursor: pointer;
+	width: 3rem;
+	height: 5rem;
+	align-self: flex-end;
+	margin-right: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.download_pdfbtn:hover {
+	opacity: 0.8;
+}
+.download__icon {
+	font-size: 1rem;
+}
+.download__text {
+	font-size: 0.7rem;
+	font-weight: 800;
+}
+#chfCurrency__input {
+	color: #9649b1;
+	background: none;
+	border: none;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	max-width: 3.3rem;
+	justify-content: center;
+}
+@media screen and (max-width: 1098px) {
+	.vouchers_valueRow {
+		flex-direction: column;
+	}
+	.button__row {
+		flex-direction: column;
+	}
+}
+
+/* Your existing CSS styles */
+
+/* Add responsive styles */
+@media screen and (max-width: 1100px) {
+	.voucher__chf {
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+	}
+
+	.voucher__chf--text {
+		width: 3rem;
+	}
+
+	.voucher__chf--value {
+		width: 4rem;
+	}
+
+	.voucher__code {
+		font-size: 0.7rem;
+		padding: 0.7rem 1rem;
+	}
+
+	.voucher__expiryDate {
+		font-size: 0.5rem;
+	}
+
+	.image__row {
+		flex-direction: column;
+	}
+
+	.image__column {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.voucher__chf--text {
+		padding: 0.5rem 0.5rem;
+	}
+}
+
+/* Your existing CSS styles */

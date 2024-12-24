@@ -1,0 +1,39 @@
+{
+  "name": "afroboost",
+  "description": "Afroboost platform",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "btoa": "^1.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-openid-connect": "^2.2.1",
+    "firebase-admin": "^11.9.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "forever": "^4.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.18",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "qrcode": "^1.5.3",
+    "react-google-login": "^5.2.2",
+    "rimraf": "^3.0.2",
+    "simple-encryptor": "^4.0.0",
+    "socket.io": "^4.6.2",
+    "uuid": "^8.3.2",
+    "voucher-code-generator": "^1.1.1"
+  },
+  "scripts": {
+    "dev": "set \"GOOGLE_APPLICATION_CREDENTIALS=service-account-file.json\" && nodemon index.dev.js",
+    "start": "set \"GOOGLE_APPLICATION_CREDENTIALS=service-account-file.json\" && nodemon index.js",
+    "start2": "export GOOGLE_APPLICATION_CREDENTIALS='/var/www/afroboost/server/service-account-file.json' && forever start index.js"
+  }
+}

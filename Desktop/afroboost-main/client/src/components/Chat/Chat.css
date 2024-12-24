@@ -1,0 +1,122 @@
+.chat {
+	height: 89vh;
+	position: sticky;
+	top: 95px;
+	display: flex;
+	flex-direction: column;
+}
+
+.emoji-picker-react .emoji-group:before {
+	background: rgb(102 65 116) !important;
+}
+
+.chatbox {
+	width: 100%;
+	display: flex;
+	overflow-y: scroll;
+	flex-direction: column-reverse;
+}
+
+.emojiPicker {
+	background: rgb(102 65 116) !important;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	height: 100px;
+	/* flex-direction: column; */
+	overflow-y: scroll;
+	overflow-x: hidden;
+	/* width: 800px; */
+}
+
+@media only screen and (max-width: 600px) {
+	.emojiPicker {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.emojiMobile {
+	background: rgb(102 65 116) !important;
+	display: flex;
+	height: 81px;
+	width: auto;
+	overflow: scroll;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.topbar {
+	display: flex;
+	width: 100%;
+	height: 90px;
+	align-items: center;
+	color: #fff;
+	font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+}
+
+.striker {
+	width: 15%;
+	height: 94px;
+	padding: 0;
+	margin: -39px;
+	padding-left: 25px;
+	margin-top: -44px;
+	padding-top: 15px;
+}
+
+.emoji-picker-react input.emoji-search {
+	display: none !important;
+}
+
+/* .emoji-picker-react .emoji-group :first-child {
+    display: none !important;
+} */
+
+.inputchat {
+	border-radius: 24px;
+	/* border: 1px white solid; */
+	background-color: #111;
+	color: white;
+	align-items: center;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	box-shadow: 5px 5px 17px 0px black;
+	transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.chatbox {
+	height: calc(100% - 205px);
+}
+
+@media screen and (max-width: 550px) {
+	.upload-icon {
+		margin-left: 1px;
+		margin-right: 1px;
+		margin-top: 4px;
+	}
+	.striker {
+		padding-left: 6px;
+		width: 48%;
+		height: 108px;
+	}
+}
+
+.chat__button {
+	background: none;
+	border: none;
+}
+.chat__icon {
+	font-size: 2rem;
+	margin-left: 0.5rem;
+	color: white;
+}
+.send__icon {
+	background: linear-gradient(rgb(140, 1, 135), rgb(45, 1, 39));
+	border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+.send__icon>.chat__icon {
+    margin-top:.3rem;
+    margin-left: 0.3rem;
+}

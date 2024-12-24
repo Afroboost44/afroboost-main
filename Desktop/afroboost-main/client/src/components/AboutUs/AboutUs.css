@@ -1,0 +1,21 @@
+.aboutus-container {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutus-container {
+        display: block;
+    }
+}
+
+.rdw-editor-toolbar {
+    background: #333 !important;
+}
+
+.editorClassName {
+    background-color: #000;
+    border: 1px white solid;
+    color: #fff;
+    padding-left: 8px;
+    font-family: "Montserrat";
+}

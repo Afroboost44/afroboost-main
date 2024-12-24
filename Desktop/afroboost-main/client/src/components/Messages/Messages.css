@@ -1,0 +1,23 @@
+.thread {
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    background-color: #0c0c0c;
+    
+    padding: 8px;
+    padding-left: 20px;
+    margin-bottom: 28px;
+    border-radius: 20px;
+    transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 5px 5px 17px 0px black;
+}
+
+.thread:hover {
+    box-shadow: 4px 4px 13px 0px rgba(74,7,164,1);
+    transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.metathread {
+    font-size: 13px;
+}

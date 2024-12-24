@@ -1,0 +1,60 @@
+.afropost:hover {
+	transform: scale(1.1);
+	box-shadow: 4px 4px 13px 0px rgba(81, 14, 83, 14);
+	transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.afropost {
+	background-color: #0c0c0c;
+	border: 0px solid transparent;
+	border-radius: 24px;
+	color: white;
+	font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	box-shadow: 5px 5px 17px 0px black;
+	font-size: 12px;
+	min-width: 230px;
+	min-height: 370px;
+	transition: All 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.post-title {
+	font-size: 16px;
+	font-weight: 600;
+	white-space: nowrap;
+	margin: 0;
+	overflow: hidden;
+	width: 230px;
+	text-overflow: ellipsis;
+}
+
+.post-date {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.afropost-container {
+	padding: 14px;
+}
+
+.post-poster {
+	display: flex;
+	align-items: center;
+}
+
+.post-meta {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.heart-icon {
+	margin-right: 8px;
+	align-items: center;
+	display: flex;
+}
+
+.post__icon {
+	font-size: 1.5rem;
+	padding-left: 0.5rem;
+}

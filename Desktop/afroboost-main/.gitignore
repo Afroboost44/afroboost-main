@@ -1,0 +1,68 @@
+# Ignorer tout ce qui est hors du projet principal
+../*
+../../*
+
+# Ignorer les fichiers système
+.DS_Store
+.zsh_history
+.localized
+
+# Ignorer les fichiers spécifiques
+*.png
+*.jpg
+*.mp4
+*.mp3
+/node_modules/
+
+
+
+ogit rm -r --cached .
+
+
+git status
+
+ç# Exclure les fichiers hors du projet principal
+../*
+../../*
+
+# Exclure les fichiers spécifiques
+*.png
+*.jpg
+*.mp4
+*.mp3
+/node_modules/
+
+# Exclure les fichiers système
+.DS_Store
+.zsh_history
+# Exclure les fichiers hors du projet principal
+../*
+../../*
+
+# Exclure les fichiers spécifiques
+*.png
+*.jpg
+*.mp4
+*.mp3
+/node_modules/
+
+# Exclure les fichiers système
+.DS_Store
+.zsh_history
+.firebaserc
+
+
+../*
+../../*
+
+*.png
+*.jpg
+*.mp4
+*.mp3
+/node_modules/
+
+.DS_Store
+.zsh_history
+.firebaserc
+
+
